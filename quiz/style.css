@@ -1,0 +1,37 @@
+.question{
+    font-size: 25px;
+    color: #3c8cc2;
+}
+#quiz{
+text-align: center;
+color: #1e2021;
+}
+body{
+    background-color: #dfe6df;
+}
+#submit{
+    background-color: #f5a905;
+    border-radius: 50px;
+    color: #ad1c39;
+    padding: 10px;
+    font-weight: bold;
+}
+.option
+{
+    font-size: 18px;
+    color: #a82020;
+}
+#luck{
+    text-align: center;
+    font-size: 20px;
+}
+#thanks{
+    font-size: 18px;
+    text-align: right;
+    color: #ad1c39;
+}
+#namefield{
+    width: 100px;
+    height: 45px;
+    border-radius: 25px;
+}

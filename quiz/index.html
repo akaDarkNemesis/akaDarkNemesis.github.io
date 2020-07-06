@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>My First Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>    
+<body onload="alertbox()">
+<h1 id="quiz">Welcome to the Web Devolopment Test </h1>
+<p id="luck">Test your skills based on Web Devolopment. The insturctions are simple, just choose the best option. Wrong answer=0 and right answer=1... <br/>
+    Good Luck!!!&#128526</p>
+<br/>
+<label class="option">Enter Your Name: </label>
+<input type="text" id="namefield">
+<div>
+    <h2 class="question">What is the full form of HTML?</h2>
+
+    <input type="radio" name="answer1" value="0" id="q1a1">
+    <label class="option">Hyper Text Transfer Protocall</label>
+<br/>
+    <input type="radio" name="answer1" value="1" id="q1a2">
+    <label class="option">Hyper Text Markup Language</label>
+<br/>
+    <input type="radio" name="answer1" value="0" id="q1a3">
+    <label class="option">Hyper Text Makeup Language</label>
+</div>
+
+<div>
+    <h2 class="question">Which of the following will you use to set time in a webpage?</h2>
+    <input type="radio" name="answer2" value="1" id="q2a1">
+    <label class="option">JS</label>
+<br/>
+    <input type="radio" name="answer2" value="0" id="q2a2">
+    <label class="option">HTML</label>
+<br/>
+    <input type="radio" name="answer2" value="0" id="q2a3">
+    <label class="option">CSS</label>
+</div>
+
+<div>
+    <h2 class="question">How will you access the CSS for an id?</h2>
+    <input type="radio" name="answer3" value="0" id="q3a1">
+    <label class="option">Give a fullstop before the id.</label>
+<br/>
+    <input type="radio" name="answer3" value="0" id="q3a2">
+    <label class="option">There is no need for any special character before the id.</label>
+<br/>
+    <input type="radio" name="answer3" value="1" id="q3a3">
+    <label class="option">Give a hash before the id.</label>
+</div>
+
+<div>
+    <h2 class="question">What tag will you use if you don't want to make a CSS file?</h2>
+    <input type="radio" name="answer4" value="0" id="q4a1">
+    <label class="option">Script tag</label>
+<br/>
+    <input type="radio" name="answer4" value="0" id="q4a2">
+    <label class="option">Stylist tag</label>
+<br/>
+    <input type="radio" name="answer4" value="1" id="q4a3">
+    <label class="option">Style Tag</label>
+</div>
+
+<div>
+    <h2 class="question">Which kind of bracket will you use for HTML coding?</h2>
+    <input type="radio" name="answer5" value="1" id="q5a1">
+    <label class="option">< ></label>
+<br/>
+    <input type="radio" name="answer5" value="0" id="q5a2">
+    <label class="option">{ }</label>
+<br/>
+    <input type="radio" name="answer5" value="0" id="q5a3">
+    <label class="option">( )</label>
+</div>
+<br/>
+<h3 id="finalscore"></h3>
+<div>
+    <button id="submit" onclick="printscore()">Submit</button>
+</div>
+<br/><br/><br/>
+<div id="thanks">
+    <p>Hope you've corrected your mistakes and learnt more on Web Devolopment with this Quiz!</p>
+</div>
+    </body>
+</html>
