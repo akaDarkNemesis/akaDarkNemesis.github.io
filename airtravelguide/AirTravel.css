@@ -1,0 +1,144 @@
+body {
+    /*padding: 50px;*/
+    
+    padding-top: 0px;
+
+    font-family: "Lexend Deca", sans-serif;
+
+    /*color: #333;
+    border-radius: 5px;
+    background: url("https://unsplash.com/photos/xY4r7y-Cllo/download?force=true");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    max-width: 100%;
+    height: 100vh;
+    background:url(https://unsplash.com/photos/SHA85I0G8K4/download?force=true);
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+
+}
+
+.search-card-container {
+    padding: 100px 70px;
+    }
+
+.search-card {
+    display: flex;
+    max-width: 400px;
+    padding: 30px;
+    flex-direction: column;
+
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 2px 2px 10px #555;
+
+    justify-content: space-between;
+}
+
+.search-card-title {
+    margin: 0;
+
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.form-group {
+    max-width: 100%;
+    margin-top: 10px;
+
+    flex-basis: 50%;
+}
+
+.form-group > input,
+.form-group > select {
+    width: 100%;
+    padding: 10px;
+
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 14px;
+
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+.inline-form-group {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.form-group > .search-label {
+    margin-bottom: 5px;
+
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    COLOR: #555;
+}
+
+.search-btn {
+    padding: 10px 20px;
+
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 18px;
+
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    background: green;
+}
+
+.d-flex-end {
+    display: flex;
+
+    justify-content: flex-end;
+}
+
+.search-card-body {
+    margin: 15px 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: #333;*/
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.name {
+    float: left; 
+    padding: 14px 16px; 
+    font-size: 20px;
+    color: white; 
+    font-weight: 1000; 
+    padding-left: 50px; 
+    cursor: crosshair;
+}
+
+.nav {
+    padding: 0px;
+}
