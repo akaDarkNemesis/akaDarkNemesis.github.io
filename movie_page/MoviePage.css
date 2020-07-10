@@ -1,0 +1,72 @@
+h1
+{
+color: white;
+}
+body
+{
+background-size: 100%;
+background-color: black;
+}
+.name
+{
+float: left; 
+padding: 16px;
+font-size: 64px;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    overflow: hidden;
+}
+li
+{
+    float: right;
+    padding-right:30px ;
+    font-size: 28px;
+}
+li a
+{
+display: block;
+color: white;
+text-align: center;
+text-decoration: none;
+}
+li a:hover
+{
+    background-color:white;
+    color:black;
+    cursor: grab;
+}
+.para
+{
+float: right;
+color: white;
+padding-right: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ol
+{
+    color: yellowgreen;
+}
+.listing
+{
+    padding-left: 40px;
+    float: left;
+}
+.worldcup
+{
+    border:1px solid snow;
+    height: min-content;
+}
+th, td
+{
+    color: wheat;
+    border: 1px solid gold;
+    padding-right: 100px;
+
+}
+
