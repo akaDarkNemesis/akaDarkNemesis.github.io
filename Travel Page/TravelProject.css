@@ -1,0 +1,39 @@
+body
+{
+background: url("https://www.xmple.com/wallpaper/blue-pink-gradient-linear-1920x1080-c2-ff69b4-00008b-a-300-f-14.svg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1
+{
+    color: turquoise;
+    font-size: 50px;
+    margin: 15px;
+}
+ol
+{
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    overflow: hidden;
+}
+li
+{
+    float: left;
+    padding-left:30px ;
+    font-size: 28px;
+    color: tomato;
+}
+p
+{
+    font-size: 20px;  
+    color: white;
+    text-align: justify;
+    margin: 15px;
+}
+a
+{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
