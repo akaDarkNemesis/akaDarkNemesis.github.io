@@ -1,0 +1,49 @@
+h1
+{
+color: white;
+text-align: center;
+font-size: 50px;
+}
+body
+{
+background-size: 100%;
+background-color: black;
+}
+.date
+{
+float: left;
+padding-left: 20px;
+font-size: 64px;
+color: white;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    overflow: hidden;
+}
+li
+{
+    float: right;
+    padding-right:30px ;
+    font-size: 28px;
+}
+li a
+{
+display: block;
+color: white;
+text-decoration: none;
+}
+li a:hover
+{
+    background-color:white;
+    color:black;
+    cursor: crosshair;
+}
+p
+{
+    color: white;
+    float: right;
+}

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            function PranavFunc(myvalue)
+            {
+                var timenow=new Date();
+                var timefinial=timenow.toLocaleString();
+                document.getElementById("Pranav").innerHTML=timefinial;
+                 if(myvalue==1)
+                 {
+                 document.getElementById("bulbimage").src="https://www.w3schools.com/js/pic_bulbon.gif";
+             }
+                else
+                 {
+                    document.getElementById("bulbimage").src="https://www.w3schools.com/js/pic_bulboff.gif";
+                }
+                
+            }
+            </script>
+    </head>
+    <body>
+        <center><h1>Pranav</h1><h2>இது ஒரு விளக்கை</h2>
+    <button type="button" onclick="PranavFunc(1)">Turn on </button>
+    <button type="button" onclick="PranavFunc(2)">Turn off </button>
+    <p id="Pranav">Time</p>
+    <img id="bulbimage" src=" https://www.w3schools.com/js/pic_bulboff.gif" height="200px" width="200px"></center>
+    </body>
+</html>
