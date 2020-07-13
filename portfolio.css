@@ -1,0 +1,12 @@
+body{
+    background-color: #fc6203;
+}
+#img{
+    border-radius: 50%;
+}
+#info{
+    background-color: #ffffff;
+    font-size: 20px;
+    height: 100px;
+    border-radius: 20px;
+}
