@@ -1,0 +1,11 @@
+body{
+    background-image: url(https://www.ebuyer.com/blog/wp-content/uploads/2014/07/buttons-on-a-calculator-header1.jpg);
+}
+.container{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h1{
+    text-align: center;
+}
