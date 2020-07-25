@@ -27,6 +27,12 @@ function printtime(){
     if(Number(sec)<10){
         sec="0"+sec;
     }
+    if(Number(hrs)<12){
+        sec=sec+"AM";
+    }
+    if(Number(hrs)>12){
+        sec=sec+"PM";
+    }
     var yrs = today.getFullYear();
     var month = today.getMonth();
     month = monthnames[Number(month)];
