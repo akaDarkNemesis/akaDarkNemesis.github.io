@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Upload Image</title>
+    </head>
+    <body>
+        <div class="contaier text-center">
+            <h1 class="m-4">Upload image</h1>
+            <label for="">Upload Image:</label>
+            <input type="file" accept="image/*" onchange="onImgUpload(event)">
+            <img id="img">
+            <br>
+            <video width="300px" controls>
+                <source id="vid" src="C:/Users/91949/Desktop/118307501_1036573713428817_1240166233096113281_n.mp4">
+            </video>
+        </div>
+        <script>
+            function onImgUpload(e){
+                let img = e.target.files[0];
+                if(img.size>102400){
+                    alert("Size should not exceed 100Kb");
+                    return;
+                }
+                // let url = URL.createObjectURL(img);
+                // showImg(url);
+                let reader = new FileReader();
+                // reader.readAsArrayBuffer(img);
+                // reader.readAsBinaryString(img);
+                reader.readAsDataURL(img);
+                // reader.readAsText(img);
+                reader.onload=function(){
+                    showImg(reader.result);
+                }
+            }
+
+
+            function showImg(s){
+                let img = document.getElementById("img");
+                img.src = s;
+                img.style.maxHeight = "300px";
+                img.style.maxWidth = "300px";
+            }
+
+        </script>
+    </body>
+</html>
