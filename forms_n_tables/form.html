@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="forms_tables_ls.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="forms_tables_ls.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="form.css">
+    <title>Forms & Tables </title>
+    </head>
+    <body>
+               <div class="container-fluid">
+                <h1 class="hc">Forms & Tables</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-title">
+                                Form
+                            </div>
+                            <div class="card-body">
+                                <form onsubmit="onSubmit(); return false" id="frm">
+                                    <div class="row">
+                                        <label for="name">Name : </label>
+                                        <input type="text" id="name" placeholder="Enter Name">
+                                    </div>
+                                    <div class="row">
+                                        <label for="phone">Phone : </label>
+                                        <input type="number" id="phn" placeholder="Enter Phone Number">
+                                    </div>
+                                    <div class="row">
+                                        <label for="dob">DOB : </label>
+                                        <input type="date" id="dob">
+                                    </div>
+                                    <div class="row">
+                                        <label for="city">City : </label>
+                                        <select id="city">
+                                            <option disabled selected value="">Select a City</option>
+                                            <option value="Chennai">Chennai</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Hyderabad">Hyderabad</option>
+                                            <option value="Mumbai">Mumbai</option>
+                                            <option value="Noida">Noida</option>
+                                            <option value="Pune">Pune</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <label for="gender">Gender : </label>
+                                        <input type="radio" value="Female" name="gender" id="Female">
+                                        <label class="il">Female</label>
+                                        <input type="radio" value="Male" name="gender" id="Male">
+                                        <label class="il">Male</label>
+                                        <input type="radio" value="Others" name="gender" id="Others">
+                                        <label class="il">Others</label>
+                                    </div>
+                                    <div class="row">
+                                         <label for="cbx">I Have : </label>
+                                         <input type="checkbox" value="Car" name="commodity" id="car">
+                                         <label class="il">Car</label>
+                                         <input type="checkbox" value="Bike" name="commodity" id="bike">
+                                         <label class="il">Bike</label>
+                                         <input type="checkbox" value="Mobile" name="commodity" id="mobile">
+                                         <label class="il">Mobile</label>
+                                         <input type="checkbox" value="Laptop" name="commodity" id="laptop">
+                                         <label class="il">Laptop</label>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <button class="btn btn-primary" type="submit" id="sbtn">Submit</button>
+                                        <span class="ml-2 mr-2"></span>
+                                        <button class="btn btn-danger" type="button" onclick="onClear()">Clear</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-title">
+                                Table
+                            </div>
+                            <div class="card-body">
+                                    <div class="row justify-content-center sbtns" id="sbtns"></div>
+                                <div class="row justify-content-center sbtns">
+                                    <button class="btn btn-secondary" onclick="onSort('name')">Name</button>
+                                    <button class="btn btn-secondary" onclick="onSort('phn')">Phone</button>
+                                    <button class="btn btn-secondary" onclick="onSort('dob')">DOB</button>
+                                    <button class="btn btn-secondary" onclick="onSort('city')">City</button>
+                                    <button class="btn btn-secondary" onclick="onSort('gender')">Gender</button>
+                                </div>
+                                <table class="table" id="tbl">
+                                    <thead>
+                                        <tr>
+                                            <th>S.No</th>
+                                            <th>Name</th>
+                                            <th>Phone</th>
+                                            <th>DOB</th>
+                                            <th>Age</th>
+                                            <th>City</th>
+                                            <th>Gender</th>
+                                            <th>Car</th>
+                                            <th>Bike</th>
+                                            <th>Mobile</th>
+                                            <th>Laptop</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div> 
+            </body>
+        </html>

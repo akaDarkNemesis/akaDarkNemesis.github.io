@@ -1,0 +1,51 @@
+body{
+    background-image: linear-gradient(#90d393, #9be489, #cbe74f, #f1d64f, #e463bb, #9c6cc2, #5567b8, #5063b6);
+}
+.hc{
+    text-align: center;
+    font-weight: 700;
+    margin: 20px;
+}
+.card-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: blueviolet;
+    color: lightgray;
+}
+.card-title{
+    text-align: center;
+}
+.card{
+    border: none;
+}
+.row{
+    margin-top: 25px;
+}
+label{
+    margin-left: 5%;
+    width: 20%;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.il{
+    width: auto;
+    font-weight: 500;
+    margin-left: 1%;
+    margin-right: 4%;   
+}
+input[type="radio"],input[type="checkbox"]{
+    margin-top: 10px;
+    width: auto;
+    cursor: pointer;
+}
+input, select{
+    width: 60%;
+}
+.sbtns{
+    margin: 10px 0px;
+}
+.sbtns .btn{
+    margin: 0px 10px;
+}
